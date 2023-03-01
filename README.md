@@ -18,15 +18,12 @@ THREAD@:
 
 ```yaml
 RUN@:
-  - SET@:
-      - TYPE@: string
-        NAME@: hello
+  - SET_STR@:
+      - NAME@: hello
         VALUE@: world
   - IF@:
-      CON@:
-        - LEFT@: ${hello}
-          CON@: ==
-          RIGHT@: world
+      AND@:
+        - ${hello} == "world"
       THEN@:
         - ECHO@: |
            Hello World! 
