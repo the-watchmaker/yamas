@@ -16,6 +16,7 @@ I use lots of YAML in different apps. They all have their own implied logic behi
 2. No native loops
 3. Limited native functions:
    - ECHO@
+   - LINE@
    - HTTP@
    - BASH@
 
