@@ -9,26 +9,25 @@ Why? I use lots of YAML in different apps. They all have their own implied logic
 ### "Hello World"
 
 ```yaml
-thread@:
-  - echo@: "Hello World \n"
-  - lineEcho@: "hello world"
+THREAD@:
+  - ECHO@: "Hello World \n"
+  - LINE@: "Hello World"
 ```
 
 ### "if"
 
 ```yaml
-run@:
-  - set@:
-      - type@: string
-        name@: hello
-        value@: world
-  - if@:
-      con@:
-        - left@: ${hello}
-          con@: ==
-          right@: world
-      then@:
-        - thread@:
-            - echo@: |
-                Hello World! 
+RUN@:
+  - SET@:
+      - TYPE@: string
+        NAME@: hello
+        VALUE@: world
+  - IF@:
+      CON@:
+        - LEFT@: ${hello}
+          CON@: ==
+          RIGHT@: world
+      THEN@:
+        - ECHO@: |
+           Hello World! 
 ```
