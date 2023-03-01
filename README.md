@@ -34,10 +34,10 @@ THREAD@:
 
 ```yaml
 RUN@:
-  - SET_STR@:
+  - SET@:
       - NAME@: hello
-        VALUE@: world
-  - SET_BOO@
+        VALUE@: "world"
+  - SET@
       - NAME@: peace
       - VALUE@: true
   - IF@:
