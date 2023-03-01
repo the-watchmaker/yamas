@@ -1,0 +1,30 @@
+RUN@:
+  - ECHO@:
+      - FROM@:
+        - HTTP@:
+            METHOD@: POST
+            URL@: http://localhost:3000/foo
+            BODY@: |
+              { "foo": bar }
+            TYPE@: JSON
+
+--- 
+
+RUN@:
+  - SET@:
+      - NAME@: response
+        VALUE_FROM@:
+          - HTTP@:
+              METHOD@: POST
+              URL@: http://localhost:3000/foo
+              BODY@: |
+                { "foo": bar }
+              TYPE@: JSON
+  - IF@:
+      EQ@:
+        - ${response.ok}
+        - true
+      THEN@:
+        - ECHO@: "ok!"
+      ELSE@:
+        - ECHO@: "uh oh"

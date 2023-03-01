@@ -11,7 +11,7 @@ YAMAS stand for Yet Another Markup As Script
 
 I use lots of YAML in different apps. They all have their own implied logic behind data structure and documentation. Nowadays, YAML is being used as near-script language anyways. (Also it looks like Python.)
 
-## Design Principle
+## Design
 1. Super simple
 2. No native loops
 3. Limited native functions:
@@ -19,6 +19,7 @@ I use lots of YAML in different apps. They all have their own implied logic behi
    - LINE@
    - HTTP@
    - BASH@
+   - PARSE@
 
 ## Syntax
 
@@ -30,14 +31,14 @@ THREAD@:
   - LINE@: "Hello World"
 ```
 
-### "IF"
+### If
 
 ```yaml
 RUN@:
-  - SET_STR@:
+  - SET@:
       - NAME@: hello
-        VALUE@: world
-  - SET_BOO@
+        VALUE@: "world"
+  - SET@
       - NAME@: peace
       - VALUE@: true
   - IF@:
@@ -53,7 +54,7 @@ RUN@:
            Hello World! 
 ```
 
-### "GO TO"
+### Go to
 
 ```yaml
 RUN@:
@@ -81,7 +82,7 @@ RUN@:
 ```
 
 
-### FUNCTION
+### Function Call
 
 ```yaml
 RUN@:
@@ -113,6 +114,26 @@ RUN@:
 
 ```
 
+## Native methods
+
+- PARSE@
+```yaml
+
+PARSE@:
+   KIND@: JSON
+   FROM@: |
+      { 
+        "foo": "bar", 
+        "soo": "taa", 
+        "bip": {
+          "bap": "boop"
+        }
+      }
+   SET_FROM@:
+      - bipbap: "bip.bap"
+ECHO@: ${bipbap}
+
+```
 
 
 ## Expressions & operators
