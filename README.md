@@ -57,7 +57,7 @@ RUN@:
 
 ```yaml
 RUN@:
-  - SET_STR@:
+  - SET@:
       - NAME@: hello
         VALUE@: world
   - IF@:
@@ -80,19 +80,8 @@ RUN@:
 
 ```
 
-### FROM
 
-```yaml
-RUN@:
-  - ECHO@:
-      STR_FROM@:
-        - "Hello"
-        - " World"
-        - "\n"
-
-```
-
-### FUNCTION CALL
+### FUNCTION
 
 ```yaml
 RUN@:
@@ -104,12 +93,57 @@ RUN@:
         THEN@:
           - RETURN: "World"
   - ECHO@:
-      STR_FROM@:
+      FROM@:
         - "Hello"
         - FROM_CALL@: World
           PUT@:
             - greeting: "Hello"
 ```
+
+## Statements & declarations
+
+- FROM@
+```yaml
+RUN@:
+  - ECHO@:
+      FROM@:
+        - "Hello"
+        - " World"
+        - "\n"
+
+```
+
+
+
+## Expressions & operators
+- EQ@, NE@, GT@, L@, GTE@, LTE@
+```yaml
+EQ@:
+   - ${foo}
+   - "bar"
+```
+
+```Javascript
+ foo === "bar"
+```
+
+- ADD@, SUB@, MUL@, DIV@
+```yaml
+@SET_NUM:
+   - "added"
+   - @FROM:
+      - @ADD
+         - ${added}
+         - 1
+```
+
+```Javascript
+ added = added + 1;
+```
+
+
+
+
 
 ## Some random reading
 - [How to Build a New Programming Language](https://pgrandinetti.github.io/compilers/page/how-to-build-a-new-programming-language/) by 
