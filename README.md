@@ -84,19 +84,17 @@ RUN@:
 ```yaml
 RUN@:
   - FN@: World
-    PARAM@:
+    TAKE@:
       - greeting
     RUN@:
-      - IF@:
-         AND@:
-           - ${hello} == "world"
+      - IF@: ${greeting} == "world"
         THEN@:
           - RETURN: "World"
   - ECHO@:
       STR_FROM@:
         - "Hello"
-        - FROM_CALL@:
-            - World
+        - FROM_CALL@: World
+          PUT@:
             - "Hello"
 ```
 
