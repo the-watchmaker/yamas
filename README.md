@@ -1,4 +1,4 @@
-# RunYAML
+# Yama Script
 YAML as script language.
 
 ## Why?
