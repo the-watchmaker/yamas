@@ -20,4 +20,11 @@ RUN@:
               BODY@: |
                 { "foo": bar }
               TYPE@: JSON
-  - ECHO@: ${response}
+  - IF@:
+      EQ@:
+        - ${response.ok}
+        - true
+      THEN@:
+        - ECHO@: "ok!"
+      ELSE@:
+        - ECHO@: "uh oh"
