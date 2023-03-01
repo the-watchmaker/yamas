@@ -99,11 +99,11 @@ RUN@:
 ```
 
 ## Some random reading
-[How to Build a New Programming Language](https://pgrandinetti.github.io/compilers/page/how-to-build-a-new-programming-language/) by 
-[Designing a Programing Language](http://ducklang.org/designing-a-programming-language-i) By DuckLang.org
-[Programming Language Design](https://bootcamp.uxdesign.cc/programming-language-design-a649513dbcf7) by Saeed Mohajeryami
-[Syntax Design](https://cs.lmu.edu/~ray/notes/syntaxdesign/) by LMU CS
-[https://medium.com/swlh/creating-a-programming-language-from-scratch-244b88e33e2f](https://medium.com/swlh/creating-a-programming-language-from-scratch-244b88e33e2f) by Joao Zsigmond
+- [How to Build a New Programming Language](https://pgrandinetti.github.io/compilers/page/how-to-build-a-new-programming-language/) by 
+- [Designing a Programing Language](http://ducklang.org/designing-a-programming-language-i) By DuckLang.org
+- [Programming Language Design](https://bootcamp.uxdesign.cc/programming-language-design-a649513dbcf7) by Saeed Mohajeryami
+- [Syntax Design](https://cs.lmu.edu/~ray/notes/syntaxdesign/) by LMU CS
+- [Creating A Programming Language From Scratch](https://medium.com/swlh/creating-a-programming-language-from-scratch-244b88e33e2f) by Joao Zsigmond
 
 [^1]: Photo by <a href="https://unsplash.com/@jmeguilos?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jules Marvin Eguilos</a> on <a href="https://unsplash.com/photos/O3oQg9CPy1k?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
