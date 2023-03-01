@@ -45,13 +45,14 @@ RUN@:
         - GOTO@: 1
         - GOTO@: 2
         - GOTO@: 3
-  LOC_1@:
-    - ECHO@: "Hello"
-    - RETURN@
-  LOC_2@:
-    - ECHO@: " World"
-    - RETURN@
-  LOC_3@:
-    - ECHO@: "\n"
-    - RETURN@
+  - LOC_1@:
+      - ECHO@: Hello
+      - RETURN@
+  - LOC_2@:
+      - ECHO@: " World"
+      - RETURN@
+  - LOC_3@:
+      - ECHO@: "\n"
+      - RETURN@
+
 ```
