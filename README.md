@@ -80,7 +80,7 @@ RUN@:
 
 ```
 
-### From
+### FROM
 
 ```yaml
 RUN@:
@@ -92,7 +92,7 @@ RUN@:
 
 ```
 
-### Function Call
+### FUNCTION CALL
 
 ```yaml
 RUN@:
