@@ -1,14 +1,17 @@
-# YAMAS
+![jules-marvin-eguilos-O3oQg9CPy1k-unsplash](https://user-images.githubusercontent.com/4682613/222035515-8ff9e540-aa55-48a2-8208-48f7699233aa.jpg)
+Photo by <a href="https://unsplash.com/@jmeguilos?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jules Marvin Eguilos</a> on <a href="https://unsplash.com/photos/O3oQg9CPy1k?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+# Yamas
 YAML as script language.
 
-Yet Another Markup As Script
+YAMAS stand for Yet Another Markup As Script
 
 ## Why?
 
 I use lots of YAML in different apps. They all have their own implied logic behind data structure and documentation. Nowadays, YAML is being used as near-script language anyways. (Also it looks like Python.)
 
 
-## Syntax Ideation
+## Syntax Design
 
 ### "Hello World"
 
