@@ -2,7 +2,7 @@
 YAML as script language.
 
 ## Ideation and why?
-I use lots of YAML in different apps. They all have their own implied logic behind syntax. YAML is being used as near-script language. (Also it looks like Python.)
+I use lots of YAML in different apps. They all have their own implied logic behind data structure and documentation. Nowadays, YAML is being used as near-script language anyways. (Also it looks like Python.)
 
 
 ## Syntax Ideation
