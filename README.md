@@ -31,7 +31,7 @@ THREAD@:
   - LINE@: "Hello World"
 ```
 
-### "IF"
+### If
 
 ```yaml
 RUN@:
@@ -54,7 +54,7 @@ RUN@:
            Hello World! 
 ```
 
-### "GO TO"
+### Go to
 
 ```yaml
 RUN@:
@@ -82,7 +82,7 @@ RUN@:
 ```
 
 
-### FUNCTION
+### Function Call
 
 ```yaml
 RUN@:
@@ -114,7 +114,7 @@ RUN@:
 
 ```
 
-## NATIVE METHODS
+## Native methods
 
 - PARSE@
 ```yaml
