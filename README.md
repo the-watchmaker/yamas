@@ -95,7 +95,7 @@ RUN@:
         - "Hello"
         - FROM_CALL@: World
           PUT@:
-            - "Hello"
+            - greeting: "Hello"
 ```
 
 
