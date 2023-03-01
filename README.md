@@ -1,5 +1,7 @@
-# Yama Script
+# YAMAS
 YAML as script language.
+
+Yet Another Markup As Script
 
 ## Why?
 
