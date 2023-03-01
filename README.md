@@ -19,6 +19,7 @@ I use lots of YAML in different apps. They all have their own implied logic behi
    - LINE@
    - HTTP@
    - BASH@
+   - PARSE@
 
 ## Syntax
 
@@ -113,6 +114,26 @@ RUN@:
 
 ```
 
+## NATIVE METHODS
+
+- PARSE@
+```yaml
+
+PARSE@:
+   KIND@: JSON
+   FROM@: |
+      { 
+        "foo": "bar", 
+        "soo": "taa", 
+        "bip": {
+          "bap": "boop"
+        }
+      }
+   SET_FROM@:
+      - bipbap: "bip.bap"
+ECHO@: ${bipbap}
+
+```
 
 
 ## Expressions & operators
