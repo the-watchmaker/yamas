@@ -28,3 +28,25 @@ RUN@:
         - ECHO@: |
            Hello World! 
 ```
+
+### "go to"
+
+```yaml
+RUN@:
+  - SET_STR@:
+      - NAME@: hello
+        VALUE@: world
+  - IF@:
+      AND@:
+        - ${hello} == "world"
+      THEN@:
+        - GOTO@: 1
+        - GOTO@: 2
+        - GOTO@: 3
+  LOC_1@:
+    - ECHO@: "Hello"
+  LOC_2@:
+    - ECHO@: " World"
+  LOC_3@:
+    - ECHO@: "\n"
+```
