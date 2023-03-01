@@ -29,9 +29,13 @@ RUN@:
   - SET_STR@:
       - NAME@: hello
         VALUE@: world
+  - SET_BOO@
+      - NAME@: peace
+      - VALUE@: true
   - IF@:
       AND@:
         - ${hello} == "world"
+        - ${peace} == true
       THEN@:
         - ECHO@: |
            Hello World! 
@@ -62,6 +66,41 @@ RUN@:
       - RETURN@
 
 ```
+
+### From
+
+```yaml
+RUN@:
+  - ECHO@:
+      STR_FROM@:
+        - "Hello"
+        - " World"
+        - "\n"
+
+```
+
+### Function Call
+
+```yaml
+RUN@:
+  - FN@: World
+    PARAM@:
+      - greeting
+    RUN@:
+      - IF@:
+         AND@:
+           - ${hello} == "world"
+        THEN@:
+          - RETURN: "World"
+  - ECHO@:
+      STR_FROM@:
+        - "Hello"
+        - FROM_CALL@:
+            - World
+            - "Hello"
+```
+
+
 
 [^1]: Photo by <a href="https://unsplash.com/@jmeguilos?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jules Marvin Eguilos</a> on <a href="https://unsplash.com/photos/O3oQg9CPy1k?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
