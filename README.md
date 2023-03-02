@@ -167,7 +167,7 @@ EQ@:
 
 
 ## Some random reading
-- [How to Build a New Programming Language](https://pgrandinetti.github.io/compilers/page/how-to-build-a-new-programming-language/) by 
+- [How to Build a New Programming Language](https://pgrandinetti.github.io/compilers/page/how-to-build-a-new-programming-language/) by Pietro Gradinetti
 - [Designing a Programing Language](http://ducklang.org/designing-a-programming-language-i) By DuckLang.org
 - [Programming Language Design](https://bootcamp.uxdesign.cc/programming-language-design-a649513dbcf7) by Saeed Mohajeryami
 - [Syntax Design](https://cs.lmu.edu/~ray/notes/syntaxdesign/) by LMU CS
