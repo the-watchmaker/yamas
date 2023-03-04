@@ -21,6 +21,14 @@ I use lots of YAML in different apps. They all have their own implied logic behi
    - BASH@
    - PARSE@
 
+## Variables and memory management
+Use Rust's "ownership" concept. 
+
+- A variable ownership can be passed around using @TAKE and @PUT.
+- Only @RUN can be the owner (should we change the name @RUN to @THREAD to make it more clear? 🤔) 
+- Once @RUN is run, values in variables are dropped and cleaned
+
+
 ## Syntax
 
 ### "Hello World"
