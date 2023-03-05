@@ -19,3 +19,12 @@
 
 # Go workspace file
 go.work
+
+# Rust build artifacts
+target/
+
+# Rust dependencies
+Cargo.lock
+
+# Ignore hidden files
+.*
