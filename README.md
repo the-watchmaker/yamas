@@ -9,7 +9,7 @@ YAMAS stand for Yet Another Markup As Script
 
 ## Why?
 
-I use lots of YAML in different apps. They all have their own implied logic behind data structure and documentation. Nowadays, YAML is being used as near-script language anyways. (Also it looks like Python.)
+I use lots of YAML in different apps. They all have their own implicit logic behind data structure and documentation. Nowadays, YAML is being used as near-script language anyways. (Also it looks like Python.)
 
 ## Design
 1. Super simple
